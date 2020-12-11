@@ -1,61 +1,19 @@
-figcaption {
-	opacity : 0;
-}
+
+@media (min-width: 600px) and (max-width: 1366px){
 
 body {
-color:black;
-background-color:white;
-background-image:url(img/page3.png);
+	background-color: blue;
+	background-image:url(img/fond.jpg);
+}
+
+input {
+
+	background-color: red;
+	margin-left: auto;
+    margin-right: auto;
+
+	
 }
 
 
-[id= fenetre] {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /*border: 5px solid yellow;*/
 }
-
-[id= texte]  {
-    position : relative;
-    width: 400px;
-    height: 400px;
-    background-color: green;
-    overflow-y: scroll;
-	overflow-x: hidden;
-    z-index :1;
-}
-
-p {
- position : relative;
-  z-index : 2; 
-  margin-left :0%; 
-  margin-top :0%;
-}
-
-.hover_img {
-    display: inline-block; 
-    border: solid;
-    border-color: #dbdbdb; border-width: thin; margin-top:2px;}
-
-.hover_img img {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: auto;
-    max-width: 25em;
-    max-height: 450px;
-    padding: 1em;
-    background-color: white;}
-
-
-.hover_img a {position:relative; border:none; color:#dbdbdb; text-decoration: none;}
-.hover_img a span { position:absolute; display:none; z-index:99; }
-.hover_img a:hover span {display: block; margin: 0;}
